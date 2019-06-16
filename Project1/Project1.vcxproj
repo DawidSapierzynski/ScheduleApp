@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{1537C68F-0978-4DE4-A55C-FEC40103F09C}</ProjectGuid>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>Project1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DodajCecheDoSprzetuWSali.cpp" />
+    <ClCompile Include="DodajGrupe.cpp" />
+    <ClCompile Include="DodajLekcje.cpp" />
+    <ClCompile Include="DodajSale.cpp" />
+    <ClCompile Include="dodajSprzetDoSali.cpp" />
+    <ClCompile Include="Grupa.cpp" />
+    <ClCompile Include="IUniwerstytet.cpp" />
+    <ClCompile Include="Lekcja.cpp" />
+    <ClCompile Include="LiczbaObiektow.cpp" />
+    <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="Sala.cpp" />
+    <ClCompile Include="Sprzet.cpp" />
+    <ClCompile Include="Uniwersytet.cpp" />
+    <ClCompile Include="UsunCecheZSprzetuWSali.cpp" />
+    <ClCompile Include="UsunGrupe.cpp" />
+    <ClCompile Include="UsunLekcje.cpp" />
+    <ClCompile Include="UsunSale.cpp" />
+    <ClCompile Include="usunSprzetZSali.cpp" />
+    <ClCompile Include="Zapisz.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DodajCecheDoSprzetuWSali.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="DodajGrupe.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="DodajLekcje.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="DodajSale.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="dodajSprzetDoSali.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Grupa.h" />
+    <ClInclude Include="IUniwerstytet.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Lekcja.h" />
+    <ClInclude Include="LiczbaObiektow.h" />
+    <ClInclude Include="MyForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Sala.h" />
+    <ClInclude Include="Sprzet.h" />
+    <ClInclude Include="Uniwersytet.h" />
+    <ClInclude Include="UsunCecheZSprzetuWSali.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UsunGrupe.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UsunLekcje.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="UsunSale.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="usunSprzetZSali.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Zapisz.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DodajCecheDoSprzetuWSali.resx">
+      <DependentUpon>DodajCecheDoSprzetuWSali.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajGrupe.resx">
+      <DependentUpon>DodajGrupe.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajLekcje.resx">
+      <DependentUpon>DodajLekcje.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajSale.resx">
+      <DependentUpon>DodajSale.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dodajSprzetDoSali.resx">
+      <DependentUpon>dodajSprzetDoSali.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUniwerstytet.resx">
+      <DependentUpon>IUniwerstytet.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm.resx">
+      <DependentUpon>MyForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsunCecheZSprzetuWSali.resx">
+      <DependentUpon>UsunCecheZSprzetuWSali.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsunGrupe.resx">
+      <DependentUpon>UsunGrupe.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsunLekcje.resx">
+      <DependentUpon>UsunLekcje.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsunSale.resx">
+      <DependentUpon>UsunSale.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usunSprzetZSali.resx">
+      <DependentUpon>usunSprzetZSali.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Zapisz.resx">
+      <DependentUpon>Zapisz.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

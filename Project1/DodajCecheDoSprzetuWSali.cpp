@@ -1,0 +1,2 @@
+#include "DodajCecheDoSprzetuWSali.h"
+
